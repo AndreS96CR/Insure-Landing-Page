@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    width: 375px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: auto;
+    padding: 2rem;
+}
+.navbar__logo{
+    width: 12rem;
+    height: 2rem;
+}
+main{
+    display: grid;
+    grid-template: repeat(14, 11.4rem) / auto;
+}
+.navbar__hamburguer-menu{
+    width: auto;
+    height: auto;
+}
+
+
+.container-1{
+    display: grid;
+    grid-area: 1 / 1 / 5 / 2;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.container-2{
+    grid-area: 5 / 1 / 10 / 2;
+    display: grid;
+    grid-template: repeat(8, 8.20rem) / repeat(8, auto);
+    background-color: var(--Dark-Violet);
+}
+.container-2__background-image-1{
+    grid-area: 1 / 1 / 3 / 5;
+    background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1679343770/samples/Insure/bg-pattern-intro-left-mobile_zpukpp.svg');
+    background-position: left;
+
+}
