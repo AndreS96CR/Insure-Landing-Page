@@ -71,7 +71,7 @@ img{
     position: absolute;
     margin-block-start: 9.8rem;
 }
-.container-2__title{
+.title{
     font-family: 'DM Serif Display', serif;
     color: var(--Very-Light-Gray);
     font-size: 4.6rem;
@@ -116,10 +116,10 @@ img{
     grid-area: 11 / 1 / 21 / 2 ;
     
 }
-.container-3__title{
-    font-size: 4.6rem;
+.title--2{
     position: absolute;
     top: -2.5999999999999996rem;
+    color: var(--Very-Dark-Violet);
 }
 .container-3__contend-container{
     display: flex;
@@ -151,6 +151,27 @@ img{
 }
 .container-3__image--person-icon{
     background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1679343773/samples/Insure/icon-people-first_axpbzi.svg');
+}
+
+
+.container-4{
+    grid-area: 21 / 1 / 24 / 2;
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    justify-items: center;
+    background-color: var(--Dark-Violet);
+    position: relative;
+}
+.container-4__background-image{
+    grid-area: 1 / 5 / 9 / 9;
+}
+.title--4{
+    position: absolute;
+    top: 6.8rem;
+}
+.button--2{
+    position: absolute;
+    top: 22rem;
 }
 
 
