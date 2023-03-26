@@ -27,7 +27,7 @@ body{
     padding: 2rem;
 }
 .navbar__logo{
-    width: 12rem;
+    width: 13rem;
     height: 2rem;
 }
 main{
@@ -211,4 +211,28 @@ footer{
 .social-media{
     width: 2.4rem;
     height: 2.4rem;
+}
+
+
+.container-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 74rem;
+    background-color: var(--Very-Light-Gray);
+}
+.container-6__subtitle{
+    color: var(--Dark-Grayish-Violet);
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    margin: 3.8rem 0;
+    text-align: center;
+}
+.container-6__text{
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    margin-block-start: 1rem;
+    text-align: center;
+    font-weight: 700;
 }
