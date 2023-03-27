@@ -14,7 +14,7 @@ html{
     --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 body{
-    width: 375px;
+    /* width: 375px; */
 }
 
 
@@ -37,6 +37,9 @@ main{
 .navbar__hamburguer-menu{
     width: auto;
     height: auto;
+}
+.navbar__mobile-menu{
+    display: none;
 }
 
 
@@ -235,4 +238,49 @@ footer{
     margin-block-start: 1rem;
     text-align: center;
     font-weight: 700;
+}
+
+@media (min-width: 1440px){
+    body{
+        width: 1440px;
+    }
+    .navbar{
+        margin: 0 16rem 0 14.8rem;
+    }
+    .navbar__hamburguer-menu{
+        display: none;
+    }
+    .button--white{
+        background-color: var(--Very-Light-Gray);
+        color: var(--Dark-Violet);
+        border: 0.2rem solid var(--Dark-Violet);
+        width: 14rem;
+        height: 4rem;
+        margin: 0 0 0 2rem 
+    }
+    .navbar__mobile-menu{
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    .navbar__mobile-menu li{
+        font-family: 'Karla', sans-serif;
+        color: var(--Dark-Grayish-Violet);
+        font-size: 1.4rem;
+        margin-inline-start: 2rem;
+    }
+
+
+    main{
+        grid-template: repeat(20, 4.8rem) / repeat(auto-fill, 8.4rem);
+    }
+    .container-2{
+        grid-area: 1 / 1 / 13 / 18 ;
+    }
+    .container-1{
+        grid-area: 3 / 10 / 16 / 16;
+        position: relative;
+    }
+  
+    
 }
