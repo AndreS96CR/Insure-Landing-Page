@@ -99,6 +99,10 @@ img{
     border: 0.2rem solid var(--Very-Light-Gray);
     margin-block-start: 2.6rem;
 }
+.button:hover{
+    color: var(--Dark-Violet);
+    background-color: var(--Very-Light-Gray);
+}
 .container-2__background-mobil-2{
     grid-area: 5 / 6 / 9 / 9;
     width: 88%;
@@ -190,13 +194,7 @@ footer{
 .container-5__background-image{
     object-fit: contain;
 }
-.button-line--2{
-    position: absolute;
-    bottom: 0;
-    width: 34rem;
-    margin: 0rem auto 0 auto;
-    border-bottom: 0.1rem solid hsl(0deg 4.67% 87.78%);
-}
+
 .navbar__logo--2{
     position: absolute;
     top: 11.3em;
@@ -273,7 +271,7 @@ footer{
 
 
     main{
-        grid-template: repeat(36, 4.8rem) / repeat(auto-fill, 8.4rem);
+        grid-template: repeat(34, 4.8rem) / repeat(auto-fill, 8.4rem);
     }
 
 
@@ -313,7 +311,7 @@ footer{
     }
     .button-line{
         position: absolute;
-        border-bottom: 0.2rem solid var(--Very-Light-Gray);
+        border-bottom: 0.1rem solid var(--Very-Light-Gray);
         width: 14.8rem;
         top: -21rem;
     }
@@ -334,6 +332,10 @@ footer{
         width: auto;
         bottom: -21rem;
     }
+    .button-line--2{
+        border-bottom: 0.1rem solid var(--Dark-Grayish-Violet);
+        top: -29rem;
+    }
 
 
 
@@ -353,6 +355,11 @@ footer{
         padding: 0;
         text-align: left;
         font-size: 1.7rem;
+    }
+    .button-line--3{
+        bottom: -12rem;
+        width: 109rem;
+        border-bottom: 0.2rem solid hsl(0deg 0% 92.55%);
     }
 
 
@@ -379,4 +386,62 @@ footer{
         width:42rem;
         right: 0.2rem;
     }
+
+
+    .container-5{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .container-5__background-image{
+        display: none;
+    }
+    .navbar__logo--2{
+        top: 18.299999999999997rem;
+        left: 17rem;
+    }
+    .social-media-container{
+        bottom: -8rem;
+        right: 17.2rem;
+    }
+
+
+    .container-6{
+        flex-direction: row;
+        width: 100vw;
+        height: 38rem;
+        margin: 0 auto;
+        justify-content: left;
+        align-items: start;
+        padding-block-start: 14rem;
+    }
+    .container-6__our-company{
+        margin-inline-start: 17rem;
+    }
+    .container-6__HELP-ME, .container-6__CONTACT, .container-6__OTHERS{
+        margin-inline-start: 18rem;
+    }
+    .container-6__subtitle{
+        font-size: 1.4rem;
+    }
+    .container-6__text{
+        font-size: 1.4rem;
+    }
+    .container-6__our-company{
+        position: relative;
+    }
+    .container-6__background-image{
+        position: absolute;
+        width: 56rem;
+        height: 23rem;
+        top: -13rem;
+        left: -18rem;
+    }
+    /* .button-line--2{
+        border-bottom: 0.1rem solid var(--Dark-Grayish-Violet);
+        top: -29rem;
+    }
+    .button-line--3{
+        bottom: -12rem;
+        width: 109rem;
+        border-bottom: 0.2rem solid hsl(0deg 0% 92.55%);
+    } */
 }
