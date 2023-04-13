@@ -29,7 +29,7 @@ html{
 }
 main{
     display: grid;
-    grid-template: repeat(25, 11.4rem) / auto;
+    grid-template: repeat(24, 11.4rem) / auto;
 }
 .navbar__hamburguer-menu{
     width: auto;
@@ -100,8 +100,7 @@ img{
     margin-block-start: 2.6rem;
 }
 .button:hover{
-    color: var(--Dark-Violet);
-    background-color: var(--Very-Light-Gray);
+   cursor: pointer;
 }
 .container-2__background-mobil-2{
     grid-area: 5 / 6 / 9 / 9;
@@ -113,6 +112,9 @@ img{
     border-bottom: 0.1rem solid var(--Dark-Grayish-Violet);
     width: 14rem;
     margin: 21rem auto 0 auto;
+}
+.container-2__background-desktop-1, .container-2__background-desktop-2{
+    display: none;
 }
 
 
@@ -156,18 +158,27 @@ img{
 .container-3__image--person-icon{
     background-image: url('https://res.cloudinary.com/dqc30i6eb/image/upload/v1679343773/samples/Insure/icon-people-first_axpbzi.svg');
 }
+.button-line--3{
+    margin-block-start: 3rem;
+    width: 32rem;
+    border-bottom: 0.1rem solid hsl(0deg 0% 89.41%);
+}
+.button-line--2{
+    display: none;
+}
 
 
 .container-4{
     grid-area: 21 / 1 / 24 / 2;
     display: grid;
     grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    margin: 0 2rem;
     justify-items: center;
     background-color: var(--Dark-Violet);
     position: relative;
 }
 .container-4__background-image{
-    grid-area: 1 / 5 / 9 / 9;
+    grid-area: 1 / 4 / 9 / 9;
 }
 .title--4{
     position: absolute;
@@ -182,12 +193,12 @@ img{
 footer{
     display: grid;
     grid-template: repeat(6, 11.4rem) / auto;
+    background-color: var(--Very-Light-Gray);
 }
 .container-5{
     grid-area: 1 / 1 / 3 / 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -197,14 +208,14 @@ footer{
 
 .navbar__logo--2{
     position: absolute;
-    top: 11.3em;
+    top: 9.8em;
 }
 .social-media-container{
     display: flex;
     justify-content: space-between;
     width: 15rem;
     position: absolute;
-    bottom: 4rem;
+    bottom: 5.4rem;
 }
 .social-media{
     width: 2.4rem;
@@ -234,6 +245,9 @@ footer{
     text-align: center;
     font-weight: 700;
 }
+.container-6__background-image{
+    display: none;
+}
 .container-4__background-img-2{
     display: none;
 }
@@ -241,7 +255,8 @@ footer{
 
 @media (min-width: 1440px){
     body{
-        width: 1440px;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .navbar{
         margin: 0 16rem 0 14.8rem;
@@ -316,23 +331,25 @@ footer{
         top: -21rem;
     }
     .container-2__background-desktop-1{
+        display: block;
         grid-area: 1 / 13 / 11 / 18;
-        position: absolute;
-        width: 39.2rem;
+        position: static;
+        width: 41rem;
         height: 48rem;
-        right: 1.4000000000000004rem;
-        top: 8rem;
         object-fit: fill;
+        z-index: 1;
     }
    
     .container-2__background-desktop-2{
+        display: block;
         grid-area: 10 / 1 / 16 / 4;
         position: absolute;
         height: auto;
         width: auto;
-        bottom: -21rem;
+        bottom: -40rem;
     }
     .button-line--2{
+        display: block;
         border-bottom: 0.1rem solid var(--Dark-Grayish-Violet);
         top: -29rem;
     }
@@ -435,13 +452,13 @@ footer{
         top: -13rem;
         left: -18rem;
     }
-    /* .button-line--2{
-        border-bottom: 0.1rem solid var(--Dark-Grayish-Violet);
-        top: -29rem;
+    
+    .button:hover{
+        cursor: pointer;
     }
-    .button-line--3{
-        bottom: -12rem;
-        width: 109rem;
-        border-bottom: 0.2rem solid hsl(0deg 0% 92.55%);
-    } */
+    
+
+    footer{
+        background-color: white;
+    }
 }

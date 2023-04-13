@@ -1,0 +1,1 @@
+const mobilHamburguerMenu = document.querySelector('')
