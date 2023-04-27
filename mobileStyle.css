@@ -218,7 +218,6 @@ img{
     grid-area: 21 / 1 / 24 / 2;
     display: grid;
     grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-    margin: 0 2rem;
     justify-items: center;
     background-color: var(--Dark-Violet);
     position: relative;

@@ -6,4 +6,4 @@ function toggleMobilMenu(){
 }
 MobilHamburguerMenu.addEventListener('click', toggleMobilMenu);
 
-console.log('Holii');
+// debo agregar el menu de desktop
