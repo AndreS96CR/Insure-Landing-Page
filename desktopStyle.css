@@ -1,7 +1,6 @@
 @media (min-width: 1440px){
     body{
         max-width: 1440px;
-        margin: 0 auto;
     }
     .navbar{
         margin: 0 16rem 0 14.8rem;
@@ -141,6 +140,11 @@
     .button--2{
         top: 7.4rem;
         right: 8rem;
+        z-index: 5;
+    }
+    .button--2:hover{
+        background-color: var(--Very-Light-Gray);
+        color: var(--Dark-Violet);
     }
     .container-4__background-image{
         display: none;
@@ -164,8 +168,8 @@
         left: 17rem;
     }
     .social-media-container{
-        bottom: -8rem;
-        right: 18.6rem;
+        bottom: 20rem;
+        right: -18rem;
     }
 
 
@@ -200,6 +204,9 @@
         height: 23rem;
         top: -13rem;
         left: -18rem;
+    }
+    .container-6__OTHERS{
+        position: relative;
     }
     
     .button:hover{
