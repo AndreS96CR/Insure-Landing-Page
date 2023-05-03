@@ -272,6 +272,9 @@ footer{
     width: 2.4rem;
     height: 2.4rem;
 }
+.social-media-container--desktop{
+    display: none;
+}
 
 
 .container-6{
