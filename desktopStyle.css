@@ -1,6 +1,8 @@
 @media (min-width: 1440px){
     body{
         max-width: 1440px;
+        max-height: auto;
+        margin: 0 auto;
     }
     .navbar{
         margin: 0 16rem 0 14.8rem;
@@ -168,14 +170,12 @@
         left: 17rem;
     }
     .social-media-container{
-        bottom: 20rem;
-        right: -18rem;
+            display: none;
     }
 
 
     .container-6{
         flex-direction: row;
-        width: 100vw;
         height: 38rem;
         margin: 0 auto;
         justify-content: left;
@@ -207,6 +207,14 @@
     }
     .container-6__OTHERS{
         position: relative;
+    }
+    .social-media-container--desktop{
+        display: flex;
+        justify-content: space-between;
+        width: 15rem;
+        position: absolute;
+        top: -7rem;
+        right: -21rem;
     }
     
     .button:hover{

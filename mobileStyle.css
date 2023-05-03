@@ -266,8 +266,7 @@ footer{
     justify-content: space-between;
     width: 15rem;
     position: absolute;
-    bottom: -243.8rem;
-    right: 11.2rem;
+    margin-block-start: 15.4rem;
 }
 .social-media{
     width: 2.4rem;
